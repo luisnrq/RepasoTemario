@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RepasoTemario.Views.TabbedPage1"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            xmlns:pages="clr-namespace:RepasoTemario.Views"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            BackgroundColor="#05314F"
+            BarTextColor="#aecfff"
+            
+            SelectedTabColor="White"
+            UnselectedTabColor="#aecfff">
+  <!--Pages can be added as references or inline-->
+  <pages:Billetes Title="Billetes" IconImageSource="busticket.png" BackgroundColor="White"/>
+    <pages:Rutas2 Title="Rutas" IconImageSource="routes.png" BackgroundColor="White"/>
+   <pages:Login Title="Mi Cuenta" IconImageSource="user.png" BackgroundColor="White"/>
+</TabbedPage>

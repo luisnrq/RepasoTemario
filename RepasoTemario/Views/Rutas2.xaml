@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RepasoTemario.Views.Rutas2">
+    <ContentPage.Resources>
+
+        <Style TargetType="Frame">
+            <Setter Property="Margin" Value="0,10,0,0"/>
+            <Setter Property="BackgroundColor" Value="#f7faff"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Text" Value="Ver Detalles"/>
+            <Setter Property="CornerRadius" Value="20"/>
+            <Setter Property="BackgroundColor" Value="#05314F"/>
+            <Setter Property="TextColor" Value="White"/>
+        </Style>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+
+                <Grid.Background>
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Color="#c0deef"
+                          Offset="0.1" />
+
+                        <GradientStop Color="white"
+                          Offset="1.0" />
+                    </LinearGradientBrush>
+                </Grid.Background>
+
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="140"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="1"/>
+                </Grid.RowDefinitions>
+                <Path Fill="#05314F" Stroke="#05314F"  Aspect="Fill" Data="m126.8675,108.63527l343,0l0,147.02589c-128.5,-58 -207.5,41.01956 -343,24.19026l0,-171.21615z" />
+            </Grid>
+
+
+            <StackLayout>
+                <ScrollView Orientation="Both">
+                    <StackLayout>
+                        <Label FontSize="40">                            <Label.Text>                                <OnPlatform x:TypeArguments="x:String">                                    <On Platform="Android" Value="Rutas"/>                                </OnPlatform>                            </Label.Text>                            <Label.FontFamily>                                <OnPlatform x:TypeArguments="x:String">                                    <On Platform="Android" Value="Play"/>                                </OnPlatform>                            </Label.FontFamily>                        </Label>
+                        <Label Text="Rutas" HorizontalOptions="CenterAndExpand" FontSize="70" FontAttributes="Bold" FontFamily="Play"/>
+                        <Frame>
+                            <StackLayout>
+                                <Label Text="Ruta 145" TextColor="Black" FontSize="30" FontAttributes="Bold"/>
+                                <Label Text="Madrid - Malaga" FontSize="20" TextColor="Black"/>
+                                <Label Text="Hora de salida: 10:30" FontSize="15" TextColor="Black" Margin="0,0,0,7"/>
+                                <Button />
+                            </StackLayout>
+                        </Frame>
+                        <Frame>
+                            <StackLayout>
+                                <Label Text="Ruta 145" TextColor="Black" FontSize="30" FontAttributes="Bold"/>
+                                <Label Text="Madrid - Malaga" FontSize="20" TextColor="Black"/>
+                                <Label Text="Hora de salida: 10:30" FontSize="15" TextColor="Black"/>
+                                <Button />
+                            </StackLayout>
+                        </Frame>
+                        <Frame>
+                            <StackLayout>
+                                <Label Text="Ruta 145" TextColor="Black" FontSize="30" FontAttributes="Bold"/>
+                                <Label Text="Madrid - Malaga" FontSize="20" TextColor="Black"/>
+                                <Label Text="Hora de salida: 10:30" FontSize="15" TextColor="Black"/>
+                                <Button />
+                            </StackLayout>
+                        </Frame>
+                        <Frame>
+                            <StackLayout>
+                                <Label Text="Ruta 145" TextColor="Black" FontSize="30" FontAttributes="Bold"/>
+                                <Label Text="Madrid - Malaga" FontSize="20" TextColor="Black"/>
+                                <Label Text="Hora de salida: 10:30" FontSize="15" TextColor="Black"/>
+                                <Button />
+                            </StackLayout>
+                        </Frame>
+                        <Frame>
+                            <StackLayout>
+                                <Label Text="Ruta 145" TextColor="Black" FontSize="30" FontAttributes="Bold"/>
+                                <Label Text="Madrid - Malaga" FontSize="20" TextColor="Black"/>
+                                <Label Text="Hora de salida: 10:30" FontSize="15" TextColor="Black"/>
+                                <Button />
+                            </StackLayout>
+                        </Frame>
+
+
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+
+
+
+
+        </StackLayout>
+
+
+    </ContentPage.Content>
+</ContentPage>

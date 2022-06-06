@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RepasoTemario.Views.Registro">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+
+                <Grid.Background>
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Color="#c0deef"
+                          Offset="0.1" />
+
+                        <GradientStop Color="white"
+                          Offset="1.0" />
+                    </LinearGradientBrush>
+                </Grid.Background>
+
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="140"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="190"/>
+                </Grid.RowDefinitions>
+                <Path Fill="#05314F" Stroke="#05314F"  Aspect="Fill" Data="m126.8675,108.63527l343,0l0,147.02589c-128.5,-58 -207.5,41.01956 -343,24.19026l0,-171.21615z" />
+                <Grid RowSpacing="20" Grid.Row="1" Margin="20,0,20,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Label Text="Registro" FontSize="50" TextColor="Black" FontAttributes="Bold" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand"/>
+
+
+                    <Entry Grid.Row="1" Placeholder="Nombre de Usuario" PlaceholderColor="#bababa" FontSize="16"/>
+                    <Entry Grid.Row="2"  Placeholder="Email" Keyboard="Email"  PlaceholderColor="#bababa" FontSize="16"/>
+                    <Entry Grid.Row="3" Placeholder="Contraseña" IsPassword="True" PlaceholderColor="#bababa" FontSize="16"/>
+                    <Entry Grid.Row="4" Placeholder="Repetir Contraseña" IsPassword="True" PlaceholderColor="#bababa" FontSize="16"/>
+                    <Button Text="Registrate" x:Name="registroBoton" BackgroundColor="#05314F" TextColor="White" HeightRequest="50" VerticalOptions="Start" Grid.Row="5"/>
+                    <Label Text="Volver al Login" HorizontalOptions="Center" Grid.Row="6" Margin="0,10,0,0" FontSize="16"/>
+
+                </Grid>
+                <!--
+                <StackLayout BackgroundColor="#f6fbff">
+                    <Label HeightRequest="1" BackgroundColor="#e3e3e3"/>
+                    <Label Text="Volver al Login" VerticalOptions="FillAndExpand" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                </StackLayout>
+                -->
+                
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
